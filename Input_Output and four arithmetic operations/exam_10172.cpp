@@ -7,6 +7,8 @@ int main(){
 	printf("( 0 )\"\"\"\\\n");
 	printf("|\"^\"`    |\n");
 	printf("||_/=\\\\__|");
+	
+	return 0;
 }
 
 /*

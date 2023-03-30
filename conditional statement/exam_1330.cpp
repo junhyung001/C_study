@@ -10,4 +10,5 @@ int main(){
 	}else if(a==b){
 		printf("==");
 	}
+	return 0;
 }
