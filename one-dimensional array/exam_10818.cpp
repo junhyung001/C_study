@@ -1,4 +1,27 @@
 #include<stdio.h>
+
+#define f_max(x, y) ((x>y) ? (x) : (y))
+#define f_min(x, y) ((x<y) ? (x) : (y))
+
+int main(){
+	int snum,i;
+	int max = 0;
+	long long int min = 1000000;
+	
+	scanf("%d", &snum);
+	int s_arr[snum];
+	
+	for(i=0; i<snum; i++){
+		scanf("%d", &s_arr[i]);
+		max = f_max(max, s_arr[i]);
+		min = f_min(min, s_arr[i]);
+	}
+	printf("%ld %d", min, max);
+}
+
+/*
+성공 코드 
+#include<stdio.h>
 #include<limits.h>
 
 int main(){
@@ -23,3 +46,4 @@ int main(){
 	}
 	printf("%d %d", min, max);
 }
+*/
